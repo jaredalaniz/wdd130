@@ -13,6 +13,7 @@ h1 {
     color: darkblue;
 }
 
+/* These lines change the size of a box */
 main img {
     width: 150px;
     height: auto;
