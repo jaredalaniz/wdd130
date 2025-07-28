@@ -1,0 +1,97 @@
+:root {
+    --primary-color: #FFD500;
+    --secondary-color: #00509D;
+    --accent1-color: #00296b;
+    --accent2-color: #f8f9fa;
+    --heading-font: "Merryweather Sans", sans-serif;
+    --body-font: "Lato", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 5. Style entire document body text content to use the body-font CSS variable.
+Also add a CSS declaration to set the text color for the content.*/
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+/* 6. Limit the page width by combining the header, main, and footer elements
+and center the content on the display using an auto left-right margin.*/
+/*This CSS selector header, main, footer { targets three different HTML 
+elements simultaneously by using a comma to specify each of these child 
+elements of the document body.*/
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* 7. Style the headings (all or just those you are using) by declaring the font-family and text color.
+*/
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* 8. Style some basic, consistent margin and padding declarations 
+for the nav, paragraph, section, and article elements.*/
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Remove the underlines from the social media image links in the footer.
+This default underline on hyperlinks is considered to be visually distracting
+ and unnecessary when applied to images as links*/
+.socialmedia {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+
+}
+
+
+article {
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    opacity: 1;
+    background-color: var(--primary-color);
+    color: black;
+}
